@@ -1,0 +1,67 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+body {
+    background-color: black;
+}
+
+div { /* Tous*/
+    border:5px solid white;
+    margin:auto;
+    margin-top:100px;
+    width:300px;
+    height:70px;  
+}
+
+p {
+    padding-top:25px;
+    font-size:18px;
+    color:white;
+    text-align:center;
+    width:300px;
+    height:70px;
+}
+
+p:hover{
+    color:black;
+}
+
+#premier:hover, #deuxieme:hover, #troisieme:hover { /*Hover de tous mes DIV */
+    background-color: white;
+    cursor: pointer;
+  } 
+
+#premier { /* Premier bouton*/
+    -webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease; 
+  }
+
+#deuxieme { /* deuxieme bouton*/
+    transition: all;
+    -moz-transition: all;
+    transition-duration: 2s;
+    -moz-transition-duration: 2s;
+}
+
+#deuxieme:hover { /* Hover du deuxieme bouton*/
+    transform: scale(1.25);
+    -moz-transform: scale(1.25);
+}
+
+#troisieme {/* troisieme  bouton*/
+    transition-property: transform;
+    -moz-transition-property: transform;
+    transition-duration: 1.5s; /* duré */
+    -moz-transition-duration: 1.5s;
+    transition-timing-function: ease; /* Transition de type ease */ 
+    -moz-transition-timing-function: ease;
+}
+#troisieme:hover { /* Hover du troisieme bouton*/
+    transform: translateX(200px); /* On déplace l'objet */
+    -moz- transform: translateX(200px); 
+}
+
+
